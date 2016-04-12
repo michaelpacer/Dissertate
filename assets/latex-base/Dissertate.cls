@@ -26,12 +26,14 @@
 
 % Fonts.
 \RequirePackage{color}
+\RequirePackage{xcolor}
 \usepackage{hyperref}
 \RequirePackage{url}
 \RequirePackage{amssymb}
 \RequirePackage{mathspec}
 \setmathsfont(Digits,Latin,Greek)[Numbers={Proportional}]{EB Garamond}
 \setmathrm{EB Garamond}
+\AtBeginEnvironment{tabular}{\addfontfeature{RawFeature=+tnum}}
 \widowpenalty=300
 \clubpenalty=300
 \setromanfont[Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0]{EB Garamond}
